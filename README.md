@@ -2,7 +2,7 @@
 # Using Nested Loops - Lab
 
 ## Introduction
-In this lab, we will practice using nested loops to iterate over nested data structures and create new collections. We'll be using data from a soccer match to practice our nested loops.
+In this lab, you'll practice using nested loops to iterate over nested data structures and create new collections. To do this, you'll be using data from a soccer match to practice our nested loops.
 
 ## Objectives
 You will be able to:
@@ -173,6 +173,10 @@ soccer_match = [
 ]
 ```
 
+## Countries: A list of strings
+
+In the cell below, iterate over the soccer_match list to create a new list with the name of the country for each team
+
 
 ```python
 # iterate over the soccer_match list to create a new list with the name of the country for each team
@@ -190,10 +194,12 @@ countries
 
 
 
+## Colors: Another list of strings!
+
+In the cell below, iterate over the soccer_match list to create a new list with the colors for each team this should be only one list containing strings for each of the country's colors.
+
 
 ```python
-# iterate over the soccer_match list to create a new list with the colors for each team
-# this should be only one list containing strings for each of the country's colors
 colors = []
 # code goes here
 for team in soccer_match:
@@ -209,10 +215,12 @@ colors
 
 
 
+## Players: A list of dictionaries
+
+This time, iterate over the soccer_match list to create a new list with the players from each team. `players` should be a single list containing the dictionaries for each of the country's players.
+
 
 ```python
-# iterate over the soccer_match list to create a new list with the players from each team
-# this should be only one list containing the dictionaries for each of the country's players
 players = []
 # code goes here
 for team in soccer_match:
@@ -315,10 +323,13 @@ players
 
 
 
+## Captains: Another list of dictionaries!
+
+Iterate over the soccer_match list to create a new list with the captains from each team.
+This should be a single list containing the dictionaries for each of the country's captains.
+
 
 ```python
-# iterate over the soccer_match list to create a new list with the captains from each team
-# this should be only one list containing the dictionaries for each of the country's captains
 captains = []
 # code goes here
 for team in soccer_match:
@@ -342,10 +353,12 @@ captains
 
 
 
+## Home Team Players: A third list of dictionaries.
+
+Iterate over the soccer_match list to create a new list with the players from ONLY the home team.
+
 
 ```python
-# iterate over the soccer_match list to create a new list with the players from ONLY the home team
-# this should be only one list containing the dictionaries for each of the home team's players
 home_team_players = []
 # code goes here
 for team in soccer_match:
@@ -405,11 +418,12 @@ home_team_players
 
 
 
+## Away Team Forwards: Yup, a list of dictionaries.
+
+Iterate over the soccer_match list to create a new list with the information for each of the away team players whose `position` is `"Forward"`.
+
 
 ```python
-# iterate over the soccer_match list to create a new list 
-# with the players from ONLY the away team with the position of forward
-# this should be only one list containing the dictionaries for each of the selected players
 away_team_forwards = []
 # code goes here
 for team in soccer_match:
@@ -438,10 +452,13 @@ away_team_forwards
 
 
 
+## Player with the Highest Number
+
+Iterate over the soccer_match list and find the player with the highest shirt_number.  
+Store this player's information in the `player_with_highest_num` variable.
+
 
 ```python
-# iterate over the soccer_match list and find the player with the highest shirt_number
-# assign the player with the highest shirt_number to player_with_highest_num variable
 player_with_highest_num = None
 # code goes here
 for team in soccer_match:
@@ -461,11 +478,12 @@ player_with_highest_num
 
 
 
+## Player Names: A Cleaned List
+
+Notice that the players oddly have have their last name's in all caps. Create a list of all the names of the players in this match. Be sure to make sure their first and last names are properly capitalized (first letter upper case, proceeding letters lower case), as opposed to how they are currently formatted.
+
 
 ```python
-# as we can see, the players all have their last names in all caps, as if they are being yelled
-# we want a list of all the names of the players in this match
-# but we want both first and last names to be formatted in title case
 player_names = []
 # code goes here
 for team in soccer_match:
@@ -504,4 +522,4 @@ player_names
 
 ## Summary
 
-In this lab, we practiced using nested loops to iterate through a nested data structure using data from a soccer match. Nested data structures can be quite complicated and it can become difficult to access more nested data. With nested loops, we are able to dynamically access this nested data and work with it as we would with a flatter data structure. It is important to think about the structure of the data before and while you're working so you know exactly what data you are working with at each level.
+In this lab, you practiced using nested loops to iterate through a nested data structure using data from a soccer match. Nested data structures can be quite complicated and it can become difficult to access more nested data. With nested loops, you are able to dynamically access this nested data and work with it as you would with a flatter data structure. It is important to think about the structure of the data before and while you're working so you know exactly what data you are working with at each level.

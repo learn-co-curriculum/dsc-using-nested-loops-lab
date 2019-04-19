@@ -217,7 +217,7 @@ home_team_players = None
 # iterate over the soccer_match list to create a new list 
 # with the players from ONLY the away team with the position of forward
 # this should be only one list containing the dictionaries for each of the selected players
-forwards = None
+away_team_forwards = None
 # code goes here
 ```
 

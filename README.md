@@ -410,14 +410,14 @@ home_team_players
 # iterate over the soccer_match list to create a new list 
 # with the players from ONLY the away team with the position of forward
 # this should be only one list containing the dictionaries for each of the selected players
-forwards = []
+away_team_forwards = []
 # code goes here
 for team in soccer_match:
     if team['away_team']:
         for player in team['players']:
             if player['position'] == 'Forward':
-                forwards.append(player)
-forwards
+                away_team_forwards.append(player)
+away_team_forwards
 ```
 
 

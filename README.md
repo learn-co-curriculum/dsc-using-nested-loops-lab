@@ -6,8 +6,7 @@ In this lab, you'll practice using nested loops to iterate over nested data stru
 
 ## Objectives
 You will be able to:
-* Combine different types of loops
-* Understand, explain and use nested loops to iterate through nested data structures
+* Use nested loops to iterate through nested data structures
 
 ## Instructions
 
@@ -175,7 +174,7 @@ soccer_match = [
 
 ## Countries: A list of strings
 
-In the cell below, iterate over the soccer_match list to create a new list with the name of the country for each team
+In the cell below, iterate over the `soccer_match` list to create a new list with the name of the country for each team. 
 
 
 ```python
@@ -196,7 +195,7 @@ countries
 
 ## Colors: Another list of strings!
 
-In the cell below, iterate over the soccer_match list to create a new list with the colors for each team this should be only one list containing strings for each of the country's colors.
+In the cell below, iterate over the `soccer_match` list to create a new list with the colors for each team this should be only one list containing strings for each of the country's colors.
 
 
 ```python
@@ -217,7 +216,7 @@ colors
 
 ## Players: A list of dictionaries
 
-This time, iterate over the soccer_match list to create a new list with the players from each team. `players` should be a single list containing the dictionaries for each of the country's players.
+This time, iterate over the `soccer_match` list to create a new list with the players from each team. `players` should be a single list containing the dictionaries for each of the country's players.
 
 
 ```python
@@ -325,7 +324,7 @@ players
 
 ## Captains: Another list of dictionaries!
 
-Iterate over the soccer_match list to create a new list with the captains from each team.
+Iterate over the `soccer_match` list to create a new list with the captains from each team.
 This should be a single list containing the dictionaries for each of the country's captains.
 
 
@@ -353,9 +352,9 @@ captains
 
 
 
-## Home Team Players: A third list of dictionaries.
+## Home Team Players: A third list of dictionaries
 
-Iterate over the soccer_match list to create a new list with the players from ONLY the home team.
+Iterate over the `soccer_match` list to create a new list with the players from ONLY the home team.
 
 
 ```python
@@ -418,9 +417,9 @@ home_team_players
 
 
 
-## Away Team Forwards: Yup, a list of dictionaries.
+## Away Team Forwards: Yup, a list of dictionaries
 
-Iterate over the soccer_match list to create a new list with the information for each of the away team players whose `position` is `"Forward"`.
+Iterate over the `soccer_match` list to create a new list with the information for each of the away team players whose `position` is `"Forward"`.
 
 
 ```python
@@ -454,7 +453,7 @@ away_team_forwards
 
 ## Player with the Highest Number
 
-Iterate over the soccer_match list and find the player with the highest shirt_number.  
+Iterate over the `soccer_match` list and find the player with the highest `shirt_number`.  
 Store this player's information in the `player_with_highest_num` variable.
 
 

@@ -6,7 +6,7 @@ In this lab, you'll practice using nested loops to iterate over nested data stru
 
 ## Objectives
 You will be able to:
-* Use nested loops to iterate through nested data structures
+- Use nested loops to iterate through nested data structures
 
 ## Instructions
 
@@ -479,7 +479,7 @@ player_with_highest_num
 
 ## Player Names: A Cleaned List
 
-Notice that the players oddly have have their last name's in all caps. Create a list of all the names of the players in this match. Be sure to make sure their first and last names are properly capitalized (first letter upper case, proceeding letters lower case), as opposed to how they are currently formatted.
+Notice that the players oddly have their last name's in all caps. Create a list of all the names of the players in this match. Be sure to make sure their first and last names are properly capitalized (first letter upper case, proceeding letters lower case), as opposed to how they are currently formatted.
 
 
 ```python

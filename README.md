@@ -6,7 +6,7 @@ In this lab, you'll practice using nested loops to iterate over nested data stru
 
 ## Objectives
 You will be able to:
-- Use nested loops to iterate through nested data structures
+* Use a nested loop when it is appropriate
 
 ## Instructions
 

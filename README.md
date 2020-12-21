@@ -1,4 +1,3 @@
-
 # Using Nested Loops - Lab
 
 ## Introduction
@@ -12,10 +11,9 @@ You will be able to:
 
 Use nested loops and the below object, `soccer_match`, to complete the following prompts and get the desired return values.
 
-Each object's structure is identical, but make sure to have a good idea of what that structure looks like before getting started. 
-
 
 ```python
+# Run this cell without changes
 soccer_match = [
   { "home_team": True,
     "away_team": False,
@@ -172,68 +170,146 @@ soccer_match = [
 ]
 ```
 
-## Countries: A list of strings
+Let's take a look at some properties of this nested data structure:
+
+
+```python
+# Run this cell without changes
+
+print("Information about soccer_match")
+print("Type:", type(soccer_match))
+print("Length:", len(soccer_match))
+print()
+
+print("Information about soccer_match[0]:")
+print("Type:", type(soccer_match[0]))
+print("Length:", len(soccer_match[0]))
+print("Keys:", soccer_match[0].keys())
+print("Values:", soccer_match[1].values())
+```
+
+Before looking at the answer below, try to identify: **what does `soccer_match` represent overall, and what does each record within `soccer_match` represent?**
+
+.
+
+.
+
+.
+
+*`soccer_match` represents a soccer match (game) containing a home team and an away team. Each record within `soccer_match` represents a team that participated in the match, and their associated stats.*
+
+## Countries: A List of Strings
 
 In the cell below, iterate over the `soccer_match` list to create a new list with the name of the country for each team. 
 
 
 ```python
-# iterate over the soccer_match list to create a new list with the name of the country for each team
 countries = []
-# code goes here
+
+# Your code here
+
+countries # ['France', 'Australia']
 ```
 
-## Colors: Another list of strings!
+## Colors: Another List of Strings!
 
-In the cell below, iterate over the `soccer_match` list to create a new list with the colors for each team this should be only one list containing strings for each of the country's colors.
+In the cell below, iterate over the `soccer_match` list to create a new list with the colors for each team.
+
+This should be only one list containing strings for each of the country's colors, not a list of lists.
 
 
 ```python
-# iterate over the soccer_match list to create a new list with the colors for each team
-# this should be only one list containing strings for each of the country's colors
 colors = []
-# code goes here
+
+# Your code here
+
+colors # ['blue', 'white', 'red', 'green', 'gold']
 ```
 
-## Players: A list of dictionaries
+## Players: A List of Dictionaries
 
 This time, iterate over the `soccer_match` list to create a new list with the players from each team. `players` should be a single list containing the dictionaries for each of the country's players.
 
 
 ```python
 players = []
-# code goes here
+
+# Your code here
+
+print(players) # [{'name': 'Hugo LLORIS', 'captain': True, 'shirt_number': 1, 'position': 'Goalie'}, {'name': 'Benjamin PAVARD',...}, ...]
 ```
 
-## Captains: Another list of dictionaries!
+## Captains: Another List of Dictionaries!
 
 Iterate over the `soccer_match` list to create a new list with the captains from each team.
-This should be a single list containing the dictionaries for each of the country's captains.
+
+This should be a single list containing the dictionaries for each of the countries' captains.
 
 
 ```python
-captains = None
-# code goes here
+captains = []
+
+# Your code here
+
+captains # One captain per team:
+# [{'name': 'Hugo LLORIS',
+#   'captain': True,
+#   'shirt_number': 1,
+#   'position': 'Goalie'},
+#  {'name': 'Mile JEDINAK',
+#   'captain': True,
+#   'shirt_number': 15,
+#   'position': 'Midfield'}]
 ```
 
-## Home Team Players: A third list of dictionaries
+## Home Team Players: A Third List of Dictionaries
 
 Iterate over the `soccer_match` list to create a new list with the players from ONLY the home team.
+
+Do not "hard-code" which team this is; use the `'home_team'` key.
 
 
 ```python
 home_team_players = []
-# code goes here
+
+# Your code here
+
+home_team players
+
+# [{'name': 'Hugo LLORIS',
+#   'captain': True,
+#   'shirt_number': 1,
+#   'position': 'Goalie'},
+#  ...
+#  {'name': 'Lucas HERNANDEZ',
+#   'captain': False,
+#   'shirt_number': 21,
+#   'position': 'Defender'}]
 ```
 
-## Away Team Forwards: Yup, a list of dictionaries
+## Away Team Forwards: Yup, a List of Dictionaries
 
 Iterate over the `soccer_match` list to create a new list with the information for each of the away team players whose `position` is `"Forward"`.
 
 
 ```python
 away_team_forwards = []
-# code goes here
+
+# Your code here
+
+away_team_forwards
+# [{'name': 'Mathew LECKIE',
+#   'captain': False,
+#   'shirt_number': 7,
+#   'position': 'Forward'},
+#  {'name': 'Robbie KRUSE',
+#   'captain': False,
+#   'shirt_number': 10,
+#   'position': 'Forward'},
+#  {'name': 'Andrew NABBOUT',
+#   'captain': False,
+#   'shirt_number': 11,
+#   'position': 'Forward'}]
 ```
 
 ## Player with the Highest Number
@@ -244,17 +320,49 @@ Store this player's information in the `player_with_highest_num` variable.
 
 ```python
 player_with_highest_num = None
-# code goes here
+
+# Your code here
+
+player_with_highest_num
+# {'name': 'Tom ROGIC',
+#  'captain': False,
+#  'shirt_number': 23,
+#  'position': 'Midfield'}
 ```
 
 ## Player Names: A Cleaned List
 
-Notice that the players oddly have their last name's in all caps. Create a list of all the names of the players in this match. Be sure to make sure their first and last names are properly capitalized (first letter upper case, proceeding letters lower case), as opposed to how they are currently formatted.
+Notice that the players oddly have their last names in all caps. Create a list of all the names of the players in this match. Be sure to make sure their first and last names are properly capitalized (first letter upper case, proceeding letters lower case), as opposed to how they are currently formatted.
 
 
 ```python
 player_names = []
-# code goes here
+
+# Your code here
+
+player_names
+# ['Hugo Lloris',
+#  'Benjamin Pavard',
+#  'Raphael Varane',
+#  'Samuel Umtiti',
+#  'Paul Pogba',
+#  'Antoine Griezmann',
+#  'Kylian Mbappe',
+#  'Ousmane Dembele',
+#  'Corentin Tolisso',
+#  'Ngolo Kante',
+#  'Lucas Hernandez',
+#  'Mathew Ryan',
+#  'Mark Milligan',
+#  'Mathew Leckie',
+#  'Robbie Kruse',
+#  'Andrew Nabbout',
+#  'Aaron Mooy',
+#  'Mile Jedinak',
+#  'Aziz Behich',
+#  'Joshua Risdon',
+#  'Trent Sainsbury',
+#  'Tom Rogic']
 ```
 
 ## Summary

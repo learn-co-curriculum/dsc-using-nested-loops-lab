@@ -533,7 +533,7 @@ home_team_players = []
 
 # Your code here
 
-home_team players
+home_team_players
 
 # [{'name': 'Hugo LLORIS',
 #   'captain': True,
